@@ -42,11 +42,6 @@ public:
 	int getPosicionX() { return posicionX; }
 	int getPosicionY() { return posicionY; }
 	SDL_Point GetPosition() {
-		//SDL_Point position = {posicionX, posicionY};
-		/*SDL_Point position;
-		position.x = posicionX;
-		position.y = posicionY;
-		return position;*/
 		return SDL_Point() = { posicionX, posicionY };
 	}
 

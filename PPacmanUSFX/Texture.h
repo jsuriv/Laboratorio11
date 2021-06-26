@@ -4,7 +4,6 @@
 #include <SDL.h>
 #include <SDL_ttf.h>
 #include <SDL_image.h>
-// #include <SDL_image.h>
 
 class Texture
 {
@@ -16,8 +15,6 @@ private:
 	int alto;
 
 public:
-	// Static SDL_Renderer so we don't have to ask for it
-	// when creating the texture or when rendering
 	// TODO: Temporary solution, should be removed after implementation of Game class
 	static SDL_Renderer* renderer;
 

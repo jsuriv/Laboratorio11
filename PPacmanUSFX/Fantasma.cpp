@@ -32,47 +32,6 @@ Fantasma::Fantasma(Tile* _tile, Texture* _fantasmaTexture) :
 	velocidad = 5;
 }
 
-//void Fantasma::reconfigurar(Tile* _tile, int _posicionX, int _posicionY, int _velocidad) 
-//{
-//	/*framesAnimacion = new TextureAnimation();
-//	framesAnimacion->setTexture(_fantasmaTexture);
-//	framesAnimacion->addCuadroAnimacion("izquierda", new SDL_Rect({ 0, 0, 25, 25 }));
-//	framesAnimacion->addCuadroAnimacion("izquierda", new SDL_Rect({ 25, 0, 25, 25 }));
-//	framesAnimacion->addCuadroAnimacion("derecha", new SDL_Rect({ 0, 25, 25, 25 }));
-//	framesAnimacion->addCuadroAnimacion("derecha", new SDL_Rect({ 25, 25, 25, 25 }));
-//	framesAnimacion->addCuadroAnimacion("arriba", new SDL_Rect({ 50, 25, 25, 25 }));
-//	framesAnimacion->addCuadroAnimacion("arriba", new SDL_Rect({ 75, 25, 25, 25 }));
-//	framesAnimacion->addCuadroAnimacion("abajo", new SDL_Rect({ 50, 0, 25, 25 }));
-//	framesAnimacion->addCuadroAnimacion("abajo", new SDL_Rect({ 75, 0, 25, 25 }));*/
-//
-//	tileActual = _tile;
-//	tileSiguiente = nullptr;
-//
-//	if (tileActual != nullptr) {
-//		tileActual->setFantasma(this);
-//		tileSiguiente = tileGraph->getTileEn(tileActual->getPosicionX(), tileActual->getPosicionY());
-//
-//		posicionX = tileActual->getPosicionX() * Tile::anchoTile;
-//		posicionY = tileActual->getPosicionY() * Tile::altoTile;
-//	}
-//	else {
-//		posicionX = 0;
-//		posicionY = 0;
-//	}
-//
-//	colisionador->w = ancho;
-//	colisionador->h = alto;
-//
-//	direccionActual = MOVE_RIGHT;
-//	direccionSiguiente = MOVE_RIGHT;
-//
-//	// Inicializa propiedade de de pacman
-//
-//	velocidad = _velocidad;
-//}
-
-
-
 void Fantasma::setTileActual(Tile* _tileNuevo) {
 	if (tileActual != nullptr) {
 		tileActual->setFantasma(nullptr);

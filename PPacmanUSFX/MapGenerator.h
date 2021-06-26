@@ -16,12 +16,6 @@
 #include "Tile.h"
 #include "TileGraph.h"
 #include "TextureManager.h"
-//#include "FactoryPacmanClasico.h"
-//#include "FactoryPacmanGalactico.h"
-//#include "Factory.h"
-//#include "FantasmasFactory.h"
-
-//#include "GamePanel.h"
 using namespace std;
 
 class MapGenerator
@@ -35,7 +29,6 @@ private:
 	int anchoPantalla;
 	int altoPantalla;
 public:
-	//MapGenerator(TileGraph* _tileGraph, TextureManager* _textureManager, int _anchoPantalla, int _altoPantalla, Factory* fabrica);
 	MapGenerator(TileGraph* _tileGraph, TextureManager* _textureManager, int _anchoPantalla, int _altoPantalla);
 
 	// carga el archivo con el mapa del nivel y todos los objetos

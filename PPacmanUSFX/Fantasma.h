@@ -35,20 +35,13 @@ protected:
 	//bool tratarDeMover(MoveDirection _direccionNueva);
 	
 public:
-	//virtual Fantasma* clone() = 0;
 
 	GameFantasmaType returnGameFantasmaType() { return tipoFantasma; }
 public:
 	//Constructores y destructores
 	Fantasma(Tile* _tile, Texture* _texture);
-	//~Fantasma();
-
-	//Metodos accesores
-	//void reconfigurar(Tile* _tile, int _posicionX, int _posicionY, int _velocidad);
 	
 	void setTileActual(Tile* _tileNuevo);
-
-	// Metodos varios
 	
 	// Actualizar datos fantasma
 	static bool avoidInPathFinder(Tile* _tile);
@@ -58,5 +51,4 @@ public:
 	void render();
 	void deleteGameObject() override;
 	void handleEvent(SDL_Event* event) {};
-
 };

@@ -16,8 +16,6 @@
 #include "MapGenerator.h"
 #include "TileGraph.h"
 #include "TextureManager.h"
-//#include "FactoryPacmanClasico.h"
-//#include "FactoryPacmanGalactico.h"
 #include "GameActor.h"
 
 using namespace std;

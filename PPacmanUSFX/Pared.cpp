@@ -2,8 +2,6 @@
 
 Pared::Pared(Tile* _tile, Texture* _textura) :
 	GameActor(_textura) {
-	//tipoTexturaPared = TEXTURA_UNO;
-	//setTexture(tipoTexturaPared);
 	tileActual = _tile;
 	if (tileActual != nullptr) {
 		tileActual->setPared(this);

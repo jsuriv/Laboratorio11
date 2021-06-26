@@ -117,9 +117,6 @@ void GameActor::render()
 {
 
 	if (visible) {
-		/*SDL_Rect rect = { posicionX, posicionY, ancho, alto };
-		SDL_Rect clip = { 0 + frameX * Tile::anchoTile, 0 + frameY * Tile::altoTile, Tile::anchoTile, Tile::altoTile };
-		textura->render(posicionX, posicionY, &clip, &rect);*/
 
 		SDL_Rect* cuadroAnimacion = new SDL_Rect({ 25 * numeroFrame, 0, getAncho(), getAlto() });
 
